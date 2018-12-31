@@ -6,6 +6,9 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
     var myLatlng = new google.maps.LatLng(59.2622029, 18.6450111);
+    var golf = new google.maps.LatLng(59.2753165, 18.5619099);
+    var ferry = new google.maps.LatLng(59.2865169, 18.7048476);
+
     // 39.399872
     // -8.224454
     
@@ -21,7 +24,6 @@ function init() {
         styles: [{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":0}]}]
     };
 
-    
 
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
@@ -32,14 +34,21 @@ function init() {
     
     var addresses = ['tavastbodavägen 2'];
 
-    for (var x = 0; x < addresses.length; x++) {
-            var latlng = new google.maps.LatLng(59.2622029, 18.6450111);
-            new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                icon: 'images/loc.png'
-            });
-    }
+    var latlng = new google.maps.LatLng(59.2622029, 18.6450111);
+    new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+    });
+        new google.maps.Marker({
+        position: ferry,
+        map: map,
+        icon: 'images/ferry.png',
+    });
+        new google.maps.Marker({
+        position: golf,
+        map: map,
+        icon: 'images/golf.png',
+    });
     
 }
 google.maps.event.addDomListener(window, 'load', init);
