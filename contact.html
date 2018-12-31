@@ -98,22 +98,28 @@
 				<div class="col-md-6 animate-box">
 					<h3>Kontakta oss</h3>
 					<p>Fyll i detta formulör för att komma i kontakt med oss <b>(ej i bruk än skicka mail till Jonas)</b></p>
-					<form action="#">
+					<form name="contactform" method="post" action="send_form_email.php">
 						<div class="row form-group">
 							<div class="col-md-6">
 								<label for="fname">Förnamn</label>
-								<input type="text" id="fname" class="form-control" placeholder="Ditt förnamn">
+								<input type="text" name="first_name" id="fname" class="form-control" placeholder="Ditt förnamn">
 							</div>
 							<div class="col-md-6">
 								<label for="lname">Efternamn</label>
-								<input type="text" id="lname" class="form-control" placeholder="Ditt efternamn">
+								<input type="text" name="last_name" id="lname" class="form-control" placeholder="Ditt efternamn">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Email</label>
-								<input type="text" id="email" class="form-control" placeholder="Din mailaddress">
+								<input type="text" name="email" id="email" class="form-control" placeholder="Din mailaddress">
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label for="email">Telefonnummer</label>
+								<input type="text" name="telephone" class="form-control" placeholder="Ditt telefonnummer">
 							</div>
 						</div>
 						<div class="row form-group">
