@@ -142,6 +142,10 @@ h1, h2, h3, h4, h5, h6, figure {
   text-transform: uppercase;
   font-weight: bold;
 }
+#gtco-logo a {
+ color: #fff; 
+}
+
 .gtco-nav a {
   padding: 5px 10px;
   color: #fff;
@@ -164,7 +168,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-nav ul li a {
   font-size: 14px;
   padding: 30px 10px;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -525,7 +528,6 @@ form label {
   margin: 0;
   padding: 0;
   color: white;
-  text-transform: uppercase;
 }
 #gtco-header .display-tc h1,
 #gtco-counter .display-tc h1,
@@ -976,7 +978,6 @@ form label {
   font-weight: bold;
   font-size: 15px;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
