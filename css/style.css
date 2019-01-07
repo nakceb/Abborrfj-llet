@@ -84,6 +84,12 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #52d3aa;
 }
 
+/* =======================================================
+*
+*   Filip Stuff
+*
+* ======================================================= */
+
 .gallery{
   margin: 10px 50 px;
 }
@@ -112,6 +118,20 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 30vw;
   }
 }
+
+.filip-table th, td{
+  text-align: left;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.filip-table tr:nth-child(even){background-color: #f2f2f2}
+.filip-table th {
+  background-color: #333;
+  color: white;
+}
+
+
 
 .gtco-container {
   max-width: 1140px;
