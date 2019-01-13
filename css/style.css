@@ -67,6 +67,8 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #aaa;
 }
 
 ::-webkit-selection {
@@ -128,6 +130,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border: solid;
   border-width: 1px;
   border-color: #555;
+  width: 150px;
 }
 .filip-table tr:nth-child(even){background-color: #f2f2f2}
 .filip-table th {
@@ -135,6 +138,24 @@ h1, h2, h3, h4, h5, h6, figure {
   color: white;
 }
 
+/* kollapsande lista */
+.collapsible {
+  cursor: pointer;
+  padding: 60px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  font-size: 17px;
+  margin: 10px;
+}
+
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
 
 
 .gtco-container {
