@@ -119,17 +119,17 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-
 .filip-table th, td{
+  font-size: small;
   text-align: left;
-  padding: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 1vw;
+  padding-top: 0.2vh;
+  padding-bottom: 0.2vh;
   border: solid;
-  border-width: 1px;
+  border-width: 0.1vw;
   border-color: #555;
-  width: 150px;
 }
+
 .filip-table tr:nth-child(even){background-color: #f2f2f2}
 .filip-table th {
   background-color: #333;
