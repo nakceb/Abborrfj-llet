@@ -3,6 +3,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "jsstenbeck@gmail.com, abborrfjallet@outlook.com";
+    $email_from = "info@abborrfjallet.se";
     $email_subject = "Kontakta-oss-Abborfjallet";
  
     function died($error) {
@@ -27,7 +28,7 @@ if(isset($_POST['email'])) {
  
     $first_name = $_POST['first_name']; // required
     $last_name = $_POST['last_name']; // required
-    $email_from = $_POST['email']; // required
+    $email = $_POST['email']; // required
     $telephone = $_POST['telephone']; // not required
     $to_date = $_POST['to']; // not required
     $from_date = $_POST['from']; // not required
@@ -36,7 +37,7 @@ if(isset($_POST['email'])) {
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
-  if(!preg_match($email_exp,$email_from)) {
+  if(!preg_match($email_exp,$email)) {
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
   }
  
@@ -66,7 +67,7 @@ if(isset($_POST['email'])) {
  
     $email_message .= "First Name: ".clean_string($first_name)."\n";
     $email_message .= "Last Name: ".clean_string($last_name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Email: ".clean_string($email)."\n";
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "från datum: ".clean_string($from_date)."\n";
     $email_message .= "till datum: ".clean_string($to_date)."\n";
