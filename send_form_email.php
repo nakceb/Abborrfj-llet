@@ -1,10 +1,10 @@
-<?php
+﻿<?php
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "jsstenbeck@gmail.com, abborrfjallet@outlook.com";
     $email_from = "info@abborrfjallet.se";
-    $email_subject = "Kontakta-oss-Abborfjallet";
+    $email_subject = "Kontakta-oss-Abborrfjallet";
  
     function died($error) {
         // your error code can go here
@@ -82,7 +82,7 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- include your own success html here -->
  
-Tack för att ni mailet. Vi har tagit emot det och återkommer snarast. <br>
+Tack för att ni kontaktat oss. Vi återkommer snarast. <br>
 <a href="contact.html">Tillbaka</a>
 
 <?php
